@@ -1,0 +1,231 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(to bottom, #275d86, #2066c2);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+}
+
+/* Regulando os ícones de rede social */
+#icones {
+    width: 5vh;
+    border-radius: 10px;
+    margin: 1vh;
+}
+
+/* Regulando a nuvem da nav bar */
+#icones2 {
+    width: 60vh;
+    position: absolute;
+    top: 0;
+    margin-left: 125vh;
+    margin-top: -3vh;
+}
+
+/* Regulando o avião da nav bar */
+#icones3 {
+    width: 38vh;
+    position: absolute;
+    top: 0;
+    margin-left: 110vh;
+    margin-top: 4vh;
+}
+
+.container {
+    float: right;
+    margin-right: 26vh;
+    margin-top: -20vh;
+}
+
+.fab img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 13vh;
+    margin-left: 12vh;
+    margin-top: 5vh;
+}
+
+.Logo {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 8vh;
+    color: aliceblue;
+    position: absolute;
+    top: 0;
+    text-align: left;
+    margin-left: 30vh;
+}
+
+.Logo2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3vh;
+    color: aliceblue;
+    position: absolute;
+    top: 0;
+    text-align: left;
+    margin-left: 60vh;
+    margin-top: 17vh;
+
+}
+
+nav {
+    background-color: #302f2f;
+    /* Cor de fundo da navbar */
+    height: 10vh;
+    /* Altura da navbar */
+    margin-top: 25vh;
+
+
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+nav ul li {
+    margin: 0 10px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: rgb(251, 255, 0);
+  }
+
+main img {
+    width: 100%;
+    position: absolute;
+}
+
+/* Título notícia */
+.noticia {
+    color: rgb(251, 255, 0);
+    position: relative;
+    font-size: 5vh;
+    font-family: 'Castoro Titling', cursive;
+    margin-left: 3vh;
+}
+
+/* Movendo a linha das notícias */
+.noticia h1 {
+    margin-top: -12vh;
+}
+
+/* Ajustando boneco amarelo */
+.noticia img {
+    height: 12vh;
+    margin-left: 48vh;
+    margin-top: -20vh;
+    position: absolute;
+}
+
+/* Titulo notícia 1 */
+.noticia h6 {
+    color: #3da1ff;
+    position: relative;
+    font-size: 3vh;
+    font-family: 'Castoro Titling', cursive;
+    margin-left: 10vh;
+}
+
+/* Icone Santos Dumont */
+#santosdumont {
+    height: 20vh;
+    margin-top: -5vh;
+    margin-left: 8vh;
+}
+/* Texto notícia 1 */
+.noticia h5 {
+    color: #ffffff;
+    position: relative;
+    font-size: 2vh;
+    margin-right: 156vh;
+    margin-top: 23vh;
+    text-align: center;
+}
+
+/* Titulo notícia 2 */
+.noticia h4 {
+    color: #3da1ff;
+    position: relative;
+    font-size: 3vh;
+    font-family: 'Castoro Titling', cursive;
+    margin-right: 3vh;
+    text-align: center;
+    margin-top: -38.5vh;
+}
+
+/* Icone notícia 2 */
+#fabEmDestaque {
+    height: 20vh;
+    margin-top: -1.5vh;
+    margin-left: 84vh;
+}
+
+/* Texto notícia 2 */
+.noticia h3 {
+    color: #ffffff;
+    position: relative;
+    font-size: 2vh;
+    margin-top: 24vh;
+    margin-right: 2vh;
+    text-align: center;
+}
+
+.noticia h2 {
+    color: #3da1ff;
+    position: relative;
+    font-size: 3vh;
+    font-family: 'Castoro Titling', cursive;
+    margin-right: 8vh;
+    text-align: end;
+    margin-top: -36vh;
+}
+
+#visitaInstitucional {
+    height: 20vh;
+    margin-top: 0vh;
+    margin-left: 161vh;
+}
+
+.visita {
+    color: #ffffff;
+    position: relative;
+    font-size: 2vh;
+    margin-top: 24vh;
+    margin-left: 150vh;
+    text-align: center;
+}
+
+button {
+  background-color: #302f2f;
+  color: rgb(251, 255, 0);
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 88vh;
+  margin-top: 5vh;
+}
+
+button:hover {
+  background-color: rgb(251, 255, 0);
+  color: #302f2f;
+}
