@@ -2,6 +2,7 @@ html,
 body {
     height: 100%;
     margin: 0;
+    padding: 0;
 }
 
 body {
@@ -112,6 +113,9 @@ nav ul li a:hover {
 main img {
     width: 100%;
     position: absolute;
+    background-repeat: no-repeat;
+    height: 70%;
+    
 }
 
 /* Título notícia */
@@ -159,6 +163,10 @@ main img {
     margin-right: 156vh;
     margin-top: 23vh;
     text-align: center;
+    text-shadow: 2px 2px 1px #000000,  /*é utilizad0 para criar a borda colorida ao redor do texto*/
+    1px 1px 1px #000000,
+    1px 1px 1px #000000, /*representa um deslocamento horizontal, um deslocamento vertical, um desfoque e a cor da borda*/
+    1px 1px 1px #000000; 
 }
 
 /* Titulo notícia 2 */
@@ -187,8 +195,13 @@ main img {
     margin-top: 24vh;
     margin-right: 2vh;
     text-align: center;
+    text-shadow: 2px 2px 1px #000000,  
+    1px 1px 1px #000000,
+    1px 1px 1px #000000, 
+    1px 1px 1px #000000; 
 }
 
+/* Título notícia 3 */
 .noticia h2 {
     color: #3da1ff;
     position: relative;
@@ -199,12 +212,14 @@ main img {
     margin-top: -36vh;
 }
 
+/* ícone notícia 3 */
 #visitaInstitucional {
     height: 20vh;
     margin-top: 0vh;
     margin-left: 161vh;
 }
 
+/* Texto notícia 3 */
 .visita {
     color: #ffffff;
     position: relative;
@@ -212,20 +227,148 @@ main img {
     margin-top: 24vh;
     margin-left: 150vh;
     text-align: center;
+    text-shadow: 2px 2px 1px #0e0e0f,  
+    1px 1px 1px #000000,
+    1px 1px 1px #000000,
+    1px 1px 1px #0c0b0e; 
+    
 }
 
+/* Estilizando e adicionando o botão saiba mais das notícias */
 button {
-  background-color: #302f2f;
-  color: rgb(251, 255, 0);
   padding: 10px 20px;
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
   margin-left: 88vh;
-  margin-top: 5vh;
+  margin-top: 7vh;
+  border: none;
+  border-radius: 5px;
+  background-color: #eaeaea;
+  color: #000000;
 }
 
+/* Ao passar por cima do botão */
 button:hover {
-  background-color: rgb(251, 255, 0);
-  color: #302f2f;
+  background-color: #302f2f;
+  color: #eeff05;
+}
+
+/* Titulo postos e graduações */
+.graduacoes{
+    color: rgb(29, 124, 248);
+    position: relative;
+    font-size: 5vh;
+    font-family: 'Castoro Titling', cursive;
+    margin-left: 3vh;
+    margin-top: 70vh;
+}
+
+/* Movendo a linha dos postos e graduações */
+.graduacoes h1 {
+    margin-top: -15vh;
+
+}
+
+/* Ajustando imagem das patentes */
+#patentesFAB {
+    height: 420px;
+    margin-top: -6vh;
+   margin-left: -0.5vh;
+   width: 427px;
+
+}
+#main2 img{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+}
+
+.graduacoes h2{
+    position: relative;
+    font-size: 3vh;
+    margin-top: -65.5vh;
+    margin-left: 64vh;
+    text-align: center;
+    text-shadow: 2px 2px 1px #0e0e0f,  
+    1px 1px 1px #000000,
+    1px 1px 1px #000000,
+    1px 1px 1px #0c0b0e; 
+color: #ffffff; /* Cor do texto */
+}
+
+.graduacoes h3{
+    position: relative;
+    font-size: 3vh;
+    margin-top: 10vh;
+    margin-left: 64vh;
+    text-align: center;
+    text-shadow: 2px 2px 1px #0e0e0f,  
+    1px 1px 1px #000000,
+    1px 1px 1px #000000, 
+    1px 1px 1px #0c0b0e; 
+color: #ffffff; /* Cor do texto */
+}
+
+/* Estilizando e adicionando o botão saiba mais dos postos e graduações */
+.graduacoes button {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    background-color: #eaeaea;
+    color: #000000;
+    margin-top: -2vh;
+}
+
+/* Ao passar por cima do botão */
+.graduacoes button:hover {
+    background-color: rgb(0, 102, 255);
+    color:#e4f30a;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  #main3 img{
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+.aeronaves {
+    color: rgb(17, 102, 32);
+    position: relative;
+    font-size: 5vh;
+    font-family: 'Castoro Titling', cursive;
+    margin-left: 3vh;
+    margin-top: -145vh;
+}
+
+/* Movendo a linha das aeronaves */
+.aeronaves h1 {
+    margin-top: -15vh;
+}
+
+.aeronaves h2{
+    font-size: 5vh;
+    margin-top: -5vh;
+    text-shadow: 2px 2px 1px #ffffff,  
+    1px 1px 1px #ffffff,
+    1px 1px 1px #ffffff,
+    1px 1px 1px #ffffff; 
+color: #000000; 
+}
+
+.aeronaves img {
+    margin-top: -10vh;;
+}
+
+.aeronaves h3{
+    font-size: 2.5vh;
+text-align: center;
+color: #000000;
+margin-top: -3vh;
+margin-left: -155vh;
+ font-family: 'Josefin Sans', sans-serif;
 }
