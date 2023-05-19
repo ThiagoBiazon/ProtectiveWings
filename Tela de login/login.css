@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.parte1 {
+    height: 100vh;
+    width: 50%;
+    background: #000000;
+    float: left;
+}
+
+.parte2 img {
+    height: 100vh;
+    width: 50%;
+    float: right;
+
+}
+
+.parte1 h1 {
+    font-size: 8vh;
+    color: rgb(34, 99, 143);
+    margin-top: 15vh;
+    text-align: start;
+    margin-left: 20vh;
+}
+
+.parte1 p {
+    font-size: 3vh;
+    color: rgb(155, 160, 165);
+    margin-top: 5vh;
+    text-align: start;
+    margin-left: 20vh;
+}
+
+.parte1 h2 {
+    font-size: 3vh;
+    color: rgb(34, 99, 143);
+    margin-top: 5vh;
+    text-align: start;
+    margin-left: 20vh;
+}
+
+.parte1 h3 {
+    font-size: 3vh;
+    color: rgb(34, 99, 143);
+    margin-top: 5vh;
+    text-align: start;
+    margin-left: 20vh;
+}
+
+.parte1 input {
+    background-color: rgb(155, 160, 165);
+    border-radius: 15px;
+    border: 3px solid rgb(34, 99, 143);
+    padding: 8px;
+    font-size: 12px;
+    margin-top: -1vh;
+    text-align: start;
+    margin-left: 19vh;
+    width: 200px;
+}
+
+::placeholder {
+    color: rgb(0, 0, 0);
+}
+
+button {
+    background-color: #1e5d86; /* Cor de fundo */
+    border: none; /* Sem borda */
+    color: rgb(0, 0, 0); /* Cor do texto */
+    padding: 8px 93px; /* Espaçamento interno */
+    font-size: 14px; /* Tamanho da fonte */
+    margin-left: -85vh;
+    margin-top: 77vh;
+    cursor: pointer; /* Cursor do mouse */
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0 8px 16px rgba(223, 224, 226, 0.2); /* Sombra */
+  }
+  
+  /* Quando o mouse passar sobre o botão */
+  button:hover {
+    background-color: #d9ff00;
+  }
+  
+  .parte1 h4 {
+    font-size: 2.7vh;
+    color: rgb(155, 160, 165);
+    margin-top: 16vh;
+    text-align: start;
+    margin-left: 20vh;
+}
+
+.parte1 h4 a{
+color: #2c8ccc;
+font-weight: 500;
+text-decoration: none;
+transition: all 1s ease-in-out;
+}
+
+.seta {
+    margin-left: 2vh;
+    position: absolute;
+}
