@@ -108,14 +108,14 @@ nav ul li a {
 
 nav ul li a:hover {
     color: rgb(251, 255, 0);
-  }
+}
 
 main img {
     width: 100%;
     position: absolute;
     background-repeat: no-repeat;
-    height: 70%;
-    
+    height: 80%;
+
 }
 
 /* Título notícia */
@@ -123,7 +123,8 @@ main img {
     color: rgb(251, 255, 0);
     position: relative;
     font-size: 5vh;
-    font-family: 'Castoro Titling', cursive;
+    font-family: 'Kaushan Script', cursive;
+    text-transform: uppercase;
     margin-left: 3vh;
 }
 
@@ -145,7 +146,7 @@ main img {
     color: #3da1ff;
     position: relative;
     font-size: 3vh;
-    font-family: 'Castoro Titling', cursive;
+    font-family: 'Kaushan Script', cursive;
     margin-left: 10vh;
 }
 
@@ -155,18 +156,22 @@ main img {
     margin-top: -5vh;
     margin-left: 8vh;
 }
+
 /* Texto notícia 1 */
 .noticia h5 {
     color: #ffffff;
     position: relative;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 2vh;
     margin-right: 156vh;
     margin-top: 23vh;
     text-align: center;
-    text-shadow: 2px 2px 1px #000000,  /*é utilizad0 para criar a borda colorida ao redor do texto*/
-    1px 1px 1px #000000,
-    1px 1px 1px #000000, /*representa um deslocamento horizontal, um deslocamento vertical, um desfoque e a cor da borda*/
-    1px 1px 1px #000000; 
+    text-shadow: 2px 2px 1px #000000,
+        /*é utilizad0 para criar a borda colorida ao redor do texto*/
+        1px 1px 1px #000000,
+        1px 1px 1px #000000,
+        /*representa um deslocamento horizontal, um deslocamento vertical, um desfoque e a cor da borda*/
+        1px 1px 1px #000000;
 }
 
 /* Titulo notícia 2 */
@@ -174,7 +179,7 @@ main img {
     color: #3da1ff;
     position: relative;
     font-size: 3vh;
-    font-family: 'Castoro Titling', cursive;
+    font-family: 'Kaushan Script', cursive;
     margin-right: 3vh;
     text-align: center;
     margin-top: -38.5vh;
@@ -190,15 +195,16 @@ main img {
 /* Texto notícia 2 */
 .noticia h3 {
     color: #ffffff;
+    font-family: 'Josefin Sans', sans-serif;
     position: relative;
     font-size: 2vh;
     margin-top: 24vh;
     margin-right: 2vh;
     text-align: center;
-    text-shadow: 2px 2px 1px #000000,  
-    1px 1px 1px #000000,
-    1px 1px 1px #000000, 
-    1px 1px 1px #000000; 
+    text-shadow: 2px 2px 1px #000000,
+        1px 1px 1px #000000,
+        1px 1px 1px #000000,
+        1px 1px 1px #000000;
 }
 
 /* Título notícia 3 */
@@ -206,7 +212,7 @@ main img {
     color: #3da1ff;
     position: relative;
     font-size: 3vh;
-    font-family: 'Castoro Titling', cursive;
+    font-family: 'Kaushan Script', cursive;
     margin-right: 8vh;
     text-align: end;
     margin-top: -36vh;
@@ -223,45 +229,46 @@ main img {
 .visita {
     color: #ffffff;
     position: relative;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 2vh;
     margin-top: 24vh;
     margin-left: 150vh;
     text-align: center;
-    text-shadow: 2px 2px 1px #0e0e0f,  
-    1px 1px 1px #000000,
-    1px 1px 1px #000000,
-    1px 1px 1px #0c0b0e; 
-    
+    text-shadow: 2px 2px 1px #0e0e0f,
+        1px 1px 1px #000000,
+        1px 1px 1px #000000,
+        1px 1px 1px #0c0b0e;
+
 }
 
 /* Estilizando e adicionando o botão saiba mais das notícias */
 button {
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-left: 88vh;
-  margin-top: 7vh;
-  border: none;
-  border-radius: 5px;
-  background-color: #eaeaea;
-  color: #000000;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 88vh;
+    margin-top: 7vh;
+    border: none;
+    border-radius: 5px;
+    background-color: #eaeaea;
+    color: #000000;
 }
 
 /* Ao passar por cima do botão */
 button:hover {
-  background-color: #302f2f;
-  color: #eeff05;
+    background-color: #302f2f;
+    color: #eeff05;
 }
 
 /* Titulo postos e graduações */
-.graduacoes{
+.graduacoes {
     color: rgb(29, 124, 248);
     position: relative;
     font-size: 5vh;
-    font-family: 'Castoro Titling', cursive;
+    font-family: 'Kaushan Script', cursive;
     margin-left: 3vh;
-    margin-top: 70vh;
+    margin-top: 68vh;
 }
 
 /* Movendo a linha dos postos e graduações */
@@ -272,13 +279,14 @@ button:hover {
 
 /* Ajustando imagem das patentes */
 #patentesFAB {
-    height: 420px;
+    height: 470px;
     margin-top: -6vh;
-   margin-left: -0.5vh;
-   width: 427px;
+    margin-left: -0.5vh;
+    width: 427px;
 
 }
-#main2 img{
+
+#main2 img {
     height: 100%;
     width: 100%;
     position: relative;
@@ -287,30 +295,35 @@ button:hover {
     margin: 0;
 }
 
-.graduacoes h2{
+.graduacoes h2 {
     position: relative;
     font-size: 3vh;
+    font-family: 'Josefin Sans', sans-serif;
     margin-top: -65.5vh;
-    margin-left: 64vh;
-    text-align: center;
-    text-shadow: 2px 2px 1px #0e0e0f,  
-    1px 1px 1px #000000,
-    1px 1px 1px #000000,
-    1px 1px 1px #0c0b0e; 
-color: #ffffff; /* Cor do texto */
+    margin-left: 69vh;
+    text-align: start;
+    text-shadow: 2px 2px 1px #0e0e0f,
+        1px 1px 1px #000000,
+        1px 1px 1px #000000,
+        1px 1px 1px #0c0b0e;
+
+    color: #ffffff;
+    /* Cor do texto */
 }
 
-.graduacoes h3{
+.graduacoes h3 {
     position: relative;
     font-size: 3vh;
+    font-family: 'Josefin Sans', sans-serif;
     margin-top: 10vh;
-    margin-left: 64vh;
-    text-align: center;
-    text-shadow: 2px 2px 1px #0e0e0f,  
-    1px 1px 1px #000000,
-    1px 1px 1px #000000, 
-    1px 1px 1px #0c0b0e; 
-color: #ffffff; /* Cor do texto */
+    margin-left: 69vh;
+    text-align: start;
+    text-shadow: 2px 2px 1px #0e0e0f,
+        1px 1px 1px #000000,
+        1px 1px 1px #000000,
+        1px 1px 1px #0c0b0e;
+    color: #ffffff;
+    /* Cor do texto */
 }
 
 /* Estilizando e adicionando o botão saiba mais dos postos e graduações */
@@ -327,20 +340,21 @@ color: #ffffff; /* Cor do texto */
 /* Ao passar por cima do botão */
 .graduacoes button:hover {
     background-color: rgb(0, 102, 255);
-    color:#e4f30a;
+    color: #e4f30a;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
-  }
+}
 
-  #main3 img{
+#main3 img {
     position: relative;
     background-repeat: no-repeat;
 }
 
 .aeronaves {
+    font-family: 'Kaushan Script', cursive;
     color: rgb(17, 102, 32);
+    text-transform: uppercase;
     position: relative;
     font-size: 5vh;
-    font-family: 'Castoro Titling', cursive;
     margin-left: 3vh;
     margin-top: -145vh;
 }
@@ -350,25 +364,149 @@ color: #ffffff; /* Cor do texto */
     margin-top: -15vh;
 }
 
-.aeronaves h2{
+.aeronaves h2 {
     font-size: 5vh;
     margin-top: -5vh;
-    text-shadow: 2px 2px 1px #ffffff,  
-    1px 1px 1px #ffffff,
-    1px 1px 1px #ffffff,
-    1px 1px 1px #ffffff; 
-color: #000000; 
+    text-shadow: 2px 2px 1px #ffffff,
+        1px 1px 1px #ffffff,
+        1px 1px 1px #ffffff,
+        1px 1px 1px #ffffff;
+    color: #000000;
 }
 
 .aeronaves img {
-    margin-top: -10vh;;
+    margin-top: -10vh;
+    ;
 }
 
-.aeronaves h3{
-    font-size: 2.5vh;
-text-align: center;
-color: #000000;
-margin-top: -3vh;
-margin-left: -155vh;
- font-family: 'Josefin Sans', sans-serif;
+.aeronaves h3 {
+    font-size: 2vh;
+    text-align: start;
+    color: #000000;
+    margin-top: 1vh;
+    margin-left: 3vh;
+    font-family: Arial, sans-serif;
+    background-color: #094a94;
+    border-radius: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    text-transform: none;
+    height: 190px;
+    width: 210px;
 }
+
+.aeronaves h4 {
+    font-size: 2vh;
+    text-align: start;
+    color: #000000;
+    margin-top: -35vh;
+    margin-left: 55vh;
+    font-family: Arial, sans-serif;
+    background-color: #094a94;
+    border-radius: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    height: 187px;
+    width: 210px;
+    text-transform: none;
+}
+
+.aeronaves h5 {
+    font-family: Arial, sans-serif;
+    font-size: 2vh;
+    text-align: start;
+    color: #000000;
+    margin-top: -37vh;
+    margin-left: 108vh;
+    background-color: #094a94;
+    border-radius: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    text-transform: none;
+    width: 210px;
+    height: 190px;
+}
+
+.aeronaves h6 {
+    font-family: Arial, sans-serif;
+    font-size: 2vh;
+    text-align: start;
+    color: #000000;
+    margin-top: -37vh;
+    margin-left: 160vh;
+    background-color: #094a94;
+    border-radius: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    text-transform: none;
+    width: 210px;
+    height: 190px;
+}
+
+.aeronaves button {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    background-color: #eaeaea;
+    color: #000000;
+    margin-top: -2vh;
+}
+
+.aeronaves button:hover {
+    background-color: rgb(17, 102, 32);
+    color: rgb(226, 244, 255);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    position: relative;
+  }
+  
+  .container2 {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  .footer-section {
+    width: 30%;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .footer-section h3 {
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    position: relative;
+    padding: 0;
+  }
+  
+  .footer-section ul li a {
+    color: #fff;
+    position: relative;
+    text-decoration: none;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    position: relative;
+    margin-top: 40px;
+  }
+  
+
+
