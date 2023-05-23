@@ -1,0 +1,262 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #275d86, #580a0a);
+
+}
+
+nav {
+    background: linear-gradient(to bottom, #353738, #000000);
+    height: 10vh;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+nav ul li {
+    margin: 0 10px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: rgb(251, 255, 0);
+}
+
+section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.oficiaisGenerais h1 {
+    font-size: 6vh;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    color: #ffffff;
+}
+
+.titulo p {
+    font-size: 6vh;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    color: rgb(8, 233, 222);
+    margin-right: 120vh;
+}
+
+.oficiaisGenerais h2 {
+    color: #ffffff;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.oficiaisSuperiores h1 {
+    font-size: 6vh;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    color: #ffffff;
+}
+
+.oficiaisSuperiores h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ffffff;
+    font-size: 3.5vh;
+    text-align: center;
+    margin-top: -3vh;
+}
+
+.oficiaisSuperiores h2 {
+    color: #ffffff;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.oficiaisIntermediarios h1 {
+    font-size: 6vh;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    color: #ffffff;
+}
+
+.PalavraUnica {
+    color: rgb(8, 233, 222);
+}
+
+.oficiaisIntermediarios h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ffffff;
+    font-size: 3.5vh;
+    text-align: center;
+    margin-top: -3vh;
+}
+
+.oficiaisIntermediarios h2 {
+    color: #ffffff;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.oficiaisSubalternos h1 {
+    font-size: 6vh;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    color: #ffffff;
+}
+
+.oficiaisSubalternos h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ffffff;
+    font-size: 3.5vh;
+    text-align: center;
+    margin-top: -3vh;
+}
+
+.oficiaisSubalternos h2 {
+    color: #ffffff;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.graduados h1 {
+    font-size: 6vh;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    color: #ffffff;
+}
+
+.graduados h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ffffff;
+    font-size: 3.5vh;
+    text-align: center;
+    margin-top: -3vh;
+}
+
+.graduados h2 {
+    color: #ffffff;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.sargentos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sargentos img {
+    width: 25vh;
+    height: 25vh;
+    margin-top: 2vh;
+}
+
+#img1 {
+    margin-left: 7vh;
+}
+
+#img3 {
+    margin-right: 20vh;
+}
+
+.praças h1 {
+    font-size: 6vh;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    color: #ffffff;
+}
+
+.praças h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ffffff;
+    font-size: 3.5vh;
+    text-align: center;
+    margin-top: -3vh;
+}
+
+.praças h2 {
+    color: #ffffff;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.praças img {
+    width: 25vh;
+    height: 25vh;
+    margin-top: 2vh;
+}
+
+#img20 {
+    margin-left: 10vh;
+}
+
+#img30 {
+    margin-left: 15vh;
+}
+
+footer {
+    background-color: #1a33a3;
+    color: #ffffff;
+    width: 100%;
+    display: flex;
+    height: 215px;
+    margin: 40px 0 0 0;
+}
+
+.texto {
+     margin-left: 17vh;
+     font-family: 'Josefin Sans', sans-serif;
+}
+
+.texto img {
+    margin-top: -3vh;
+}
+
+.texto h4 {
+    font-size: 2.7vh;
+    text-align: center;
+}
+
+.links h3 {
+    font-size: 3vh;
+    margin-top: 4vh;
+    margin-left: 60vh;
+    white-space: nowrap;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+.links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 2.7vh;
+    margin-left: 54vh;
+    margin-top: -2vh;
+    
+}
+
+.links li {
+    list-style: none;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.contato {
+    margin-left: 40vh;
+    margin-top: 1vh;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.7vh;
+}
+
+.direitos {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-top: 24vh;
+    font-family: 'Josefin Sans', sans-serif;
+}

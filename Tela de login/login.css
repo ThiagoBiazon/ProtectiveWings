@@ -19,6 +19,7 @@ body {
 
 .parte1 h1 {
     font-size: 8vh;
+    font-family: 'Josefin Sans', sans-serif;
     color: rgb(34, 99, 143);
     margin-top: 15vh;
     text-align: start;
@@ -27,6 +28,7 @@ body {
 
 .parte1 p {
     font-size: 3vh;
+    font-family: 'Josefin Sans', sans-serif;
     color: rgb(155, 160, 165);
     margin-top: 5vh;
     text-align: start;
@@ -39,6 +41,7 @@ body {
     margin-top: 5vh;
     text-align: start;
     margin-left: 20vh;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .parte1 h3 {
@@ -47,6 +50,7 @@ body {
     margin-top: 5vh;
     text-align: start;
     margin-left: 20vh;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .parte1 input {
@@ -54,6 +58,7 @@ body {
     border-radius: 15px;
     border: 3px solid rgb(34, 99, 143);
     padding: 8px;
+    
     font-size: 12px;
     margin-top: -1vh;
     text-align: start;
@@ -63,14 +68,17 @@ body {
 
 ::placeholder {
     color: rgb(0, 0, 0);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.3vh;
+    
 }
 
 button {
     background-color: #1e5d86; /* Cor de fundo */
     border: none; /* Sem borda */
     color: rgb(0, 0, 0); /* Cor do texto */
-    padding: 8px 93px; /* Espaçamento interno */
-    font-size: 14px; /* Tamanho da fonte */
+    padding: 7px 91px; /* Espaçamento interno */
+    font-size: 17px; /* Tamanho da fonte */
     margin-left: -85vh;
     margin-top: 77vh;
     cursor: pointer; /* Cursor do mouse */
@@ -81,6 +89,7 @@ button {
   /* Quando o mouse passar sobre o botão */
   button:hover {
     background-color: #d9ff00;
+    
   }
   
   .parte1 h4 {
@@ -89,6 +98,7 @@ button {
     margin-top: 16vh;
     text-align: start;
     margin-left: 20vh;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .parte1 h4 a{
@@ -96,6 +106,7 @@ color: #2c8ccc;
 font-weight: 500;
 text-decoration: none;
 transition: all 1s ease-in-out;
+
 }
 
 .seta {

@@ -2,6 +2,14 @@
 <html lang="pt-br">
 
 <head>
+   <style>
+      body {
+         background: linear-gradient(to bottom, #1b35a5, #438fb3);
+
+         margin: 0;
+         padding: 0;
+      }
+   </style>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,12 +27,12 @@
 
 <nav>
    <ul>
-      <li><a href="#">ÚLTIMAS NOTÍCIAS</a></li>
-      <li><a href="#">POSTOS E GRADUAÇÕES </a></li>
-      <li><a href="#">AERONAVES E HELICÓPTEROS </a></li>
+      <li><a href="#noticias" >ÚLTIMAS NOTÍCIAS</a></li>
+      <li><a href="#graduacoes" >POSTOS E GRADUAÇÕES </a></li>
+      <li><a href="#aeronaves">AERONAVES E HELICÓPTEROS </a></li>
       <li><a href="#">QUIZ </a></li>
       <li><a href="./login.html">LOGIN </a></li>
-      <li><a href="#">CONTATO</a></li>
+      <li><a href="#contato">CONTATO</a></li>
    </ul>
 
    <body>
@@ -33,7 +41,7 @@
             <p> Protective Wings</p>
          </div>
          <div class="fab">
-            <img src="./img/fab-logo.png">
+            <img src="./img/4d1fef18c89667d90a822c59f96ae8dd-removebg-preview.png">
          </div>
          <div class="Logo2">
             Força Aérea Brasileira
@@ -51,13 +59,11 @@
             <img src="./img/20200205082529612989i-removebg-preview.png" id="icones3">
          </div>
       </div>
-      <main>
-         <img src="./img/Capturar.PNG">
-      </main>
-      <div class="noticia">
+
+      <div class="noticia"> <a name="noticias"></a>
          <p>Últimas notícias <br>
          </p>
-         <h1 style="color:#302f2f">___________</h1>
+         <h1 style="color:#161515">___________</h1>
          <img
             src="./img/png-transparent-newspaper-icon-world-news-headline-google-news-plugin-newsroom-icon-design-yellow-removebg-preview.png">
          <h6>Pai da aviação</h6>
@@ -80,15 +86,12 @@
             Saiba mais
          </button>
       </div>
-      <main id="main2">
-         <img src="./img/esquadrilha.PNG">
-      </main>
 
    </body>
 </nav>
-<div class="graduacoes">
+<div class="graduacoes"> <a name="graduacoes"></a>
    <p>POSTOS E GRADUAÇÕES</p>
-   <h1 style="color: #f3e418;">___________</h1>
+   <h1 style="color: #161515;">___________</h1>
    <img src="./img/patentesfab.jpg" id="patentesFAB" width="400">
    <h2>A hierarquia militar é a ordenação da autoridade, em níveis diferentes, <br>
       dentro da estrutura da FAB. A ordenação se faz por postos ou graduações. <br>
@@ -111,12 +114,11 @@
    </button>
 </div>
 <main id="main3">
-   <img src="./img/fundo.PNG">
-   <div class="aeronaves">
-      <p>Aeronáves e Helicóperos</p>
-      <h1 style="color: rgb(84, 94, 100)">_____________</h1>
+   <div class="aeronaves"> <a name="aeronaves"></a>
+      <p>Aeronáves e Helicóperos</p> 
+      <h1 style="color: #161515">_____________</h1>
       <h2>Caça</h2>
-      <img src="./img/aeronaes-removebg-preview (1).png" id="aeronavesCAÇA" width="400">
+      <img src="./img/aeronaes-removebg-preview (1).png" id="aeronavesCAÇA" width="1320">
       <h3>
          F-39 GRIPEN E/F <br>
          <br>
@@ -156,7 +158,7 @@
          Missão:<span style="color: rgb(209, 204, 204)"> Ataque, Reconhecimento<br>
             Armado e Aéreo, Controle
             Aéreo<br> Avançado e Apoio Aéreo Aproximado</span>
-         </h5>
+      </h5>
       <h6>
          A-29 SUPER TUCANO <br>
          <br>
@@ -170,36 +172,45 @@
          Missão:<span style="color: rgb(209, 204, 204)"> Defesa Aérea, Ataque, <br>
             Reconhecimento Armado e Aéreo,
             Controle Aéreo Avançado, e Demonstração Aérea</span>
-         </h6>
-         <button onclick="saibamais2()">
-            Saiba mais
-         </button>
-      </div>
-      <footer>
-         <div class="container2">
-           <div class="footer-content">
-             <div class="footer-section">
-               <h3>Sobre Nós</h3>
-               <p>Informações sobre a empresa</p>
-             </div>
-             <div class="footer-section">
-               <h3>Links Úteis</h3>
-               <ul>
-                 <li><a href="#">Home</a></li>
-                 <li><a href="#">Produtos</a></li>
-                 <li><a href="#">Contato</a></li>
-               </ul>
-             </div>
-             <div class="footer-section">
-               <h3>Contato</h3>
-               <p>Email: exemplo@example.com</p>
-               <p>Telefone: (XX) XXXX-XXXX</p>
-             </div>
-           </div>
-           <div class="footer-bottom">
-             <p>Todos os direitos reservados &copy; 2023</p>
-           </div>
-         </div>
-       </footer>
+      </h6>
+      <button onclick="saibamais2()">
+         Saiba mais
+      </button>
+   </div>
 </main>
+<footer>
+   <div class="texto">
+      <h4>Asas que protegem <br>
+         o país
+      </h4>
+      <img src="./img/4d1fef18c89667d90a822c59f96ae8dd-removebg-preview.png" width="150">
+   </div>
+   <div class="links">
+      <h3>Links Úteis</h3>
+      <ul>
+         <li><a href="./ProtectiveWings.html">Início</a></li>
+         <li><a href="./login.html">Login</a></li>
+         <li><a href="./cadastro.html">Cadastre-se</a></li>
+         <li><a href="./cadastro.html">Quiz</a></li>
+      </ul>
+   </div>
+   <div class="contato"> <a name="contato"></a>
+      <h3>Contato</h3>
+      <p>Email: protectivewings01@gmail.com</p>
+      <p>Telefone: (11) 97694-5199</p>
+   </div>
+   <div class="direitos">
+      <p>Todos os direitos reservados &copy; 2023 - Thiago Campana Biazon</p>
+   </div>
+</footer>
+
 </html>
+<script>
+   function SaibaMais() {
+     window.location.href = "Notícias-SaibaMais.html";
+   }
+
+   function Saibamais() {
+     window.location.href = "SaibaMais-Graduações.html";
+   }
+ </script>
