@@ -359,7 +359,6 @@ button:hover {
     font-family: 'Josefin Sans', sans-serif;
     background-color: #094a94;
     border-radius: 30px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 16px;
     text-transform: none;
     height: 190px;
@@ -465,7 +464,7 @@ footer {
     color: #ffffff;
     text-decoration: none;
     font-size: 2.7vh;
-    margin-left: 54vh;
+    margin-left: 50vh;
     margin-top: -2vh;
     
 }

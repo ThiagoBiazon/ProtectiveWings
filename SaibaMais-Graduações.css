@@ -3,8 +3,9 @@ body {
     margin: 0;
     padding: 0;
     background: linear-gradient(to bottom, #275d86, #580a0a);
-
+    
 }
+
 
 nav {
     background: linear-gradient(to bottom, #353738, #000000);
@@ -52,7 +53,7 @@ section {
     font-family: 'Josefin Sans', sans-serif;
     text-align: center;
     color: rgb(8, 233, 222);
-    margin-right: 120vh;
+    margin-right: 105vh;
 }
 
 .oficiaisGenerais h2 {
@@ -212,7 +213,7 @@ footer {
 }
 
 .texto img {
-    margin-top: -3vh;
+    margin-top: 2vh;
 }
 
 .texto h4 {
@@ -223,7 +224,7 @@ footer {
 .links h3 {
     font-size: 3vh;
     margin-top: 4vh;
-    margin-left: 60vh;
+    margin-left: 56vh;
     white-space: nowrap;
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -233,7 +234,7 @@ footer {
     color: #ffffff;
     text-decoration: none;
     font-size: 2.7vh;
-    margin-left: 54vh;
+    margin-left: 47vh;
     margin-top: -2vh;
     
 }
@@ -260,3 +261,51 @@ footer {
     margin-top: 24vh;
     font-family: 'Josefin Sans', sans-serif;
 }
+
+
+html {
+    scroll-behavior: smooth; /*para descer devagar até a sessão apertada8*/
+  }
+
+
+  .profile-button {
+    position: relative; /* para posição da segunda aba ficar em baixo do ícone*/
+    padding: 10px;
+    background: linear-gradient(to bottom, #353738, #000000);
+  }
+
+  .profile-button img {
+    width: 7vh;
+    height: 7vh;
+    margin-right: 5px;
+    vertical-align: middle; /* para ajustar o ícone*/
+  }
+
+  .profile-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: rgb(58, 129, 223);
+    border: 2px solid #020101;
+    padding: 10px;
+    display: none; /* para aparecer quando passar por cima e não ficar fixo*/
+  }
+
+  .profile-menu a {
+    display: block; /* tamanho do quadrado*/
+    padding: 5px;
+    text-decoration: none; /* tirar o sublinhado*/
+    color: #000000;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
+  .profile-button:hover .profile-menu {
+    display: block;  /* para aparecer na tela quando passar por cima*/
+}
+
+.seta {
+    margin-left: 2vh;
+    margin-top: 8vh;
+    position: absolute;
+}
+  

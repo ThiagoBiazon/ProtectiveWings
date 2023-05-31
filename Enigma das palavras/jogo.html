@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jogo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<nav>
+  <div class="seta">
+      <a href="../ProtectiveWings.html"><img
+              src="../img/SETA (1).png"
+              width="70px"></a>
+  </div>
+  <ul>
+      <li><a href="##"></a></li>
+      <li><a href="../ProtectiveWings.html">INÍCIO</a></li>
+      <li><a href="../Notícias-SaibaMais.html">ÚLTIMAS NOTÍCIAS </a></li>
+      <li><a href="../ProtectiveWings.html#graduacoes">POSTOS E GRADUAÇÕES </a></li>
+      <li><a href="../ProtectiveWings.html#aeronaves">AERONAVES E HELICÓPTEROS </a></li>
+      <li><a href="../Enigma das palavras/jogo.html#contato">CONTATO</a></li>
+      <div class="profile-button">
+          <img src="../img/3106807-removebg-preview.png" alt="Ícone de Perfil">
+          <div class="profile-menu">
+              <a href="#">Perfil</a>
+              <a href="#">Deslogar</a>
+          </div>
+      </div>
+  </ul>
+</nav>
+
+<body>
+    <h1>ENIGMA DAS LETRAS</h1>
+    
+    <div id="container-enforcado">
+      <img id="img-enforcado" src="enforcado0.png" alt="Enforcado">
+    </div>
+    
+    <div id="container-palavra">
+      <span id="palavra"></span>
+    </div>
+
+    <div id="teclado">
+      <button class="letra">A</button>
+      <button class="letra">B</button>
+      <button class="letra">C</button>
+      <button class="letra">D</button>
+      <button class="letra">E</button>
+      <button class="letra">F</button>
+      <button class="letra">G</button>
+      <button class="letra">H</button>
+      <button class="letra">I</button>
+      <button class="letra">J</button>
+      <button class="letra">K</button>
+      <button class="letra">L</button>
+      <button class="letra">M</button>
+      <button class="letra">N</button>
+      <button class="letra">O</button>
+      <button class="letra">P</button>
+      <button class="letra">Q</button>
+      <button class="letra">R</button>
+      <button class="letra">S</button>
+      <button class="letra">T</button>
+      <button class="letra">U</button>
+      <button class="letra">V</button>
+      <button class="letra">W</button>
+      <button class="letra">X</button>
+      <button class="letra">Y</button>
+      <button class="letra">Z</button>
+    </div>
+</body>
+<footer>
+  <div class="texto">
+      <h4>Asas que protegem <br>
+          o país
+      </h4>
+      <img src="../img/4d1fef18c89667d90a822c59f96ae8dd-removebg-preview.png" width="150">
+  </div>
+  <div class="links">
+      <h3>Links Úteis</h3>
+      <ul>
+          <li><a href="../ProtectiveWings.html">Início</a></li>
+          <li><a href="../login.html">Login</a></li>
+          <li><a href="../cadastro.html">Cadastre-se</a></li>
+          <span><li><a href="../Enigma das palavras/jogo.html">Enigma das Letras</a></li></span>
+      </ul>
+  </div>
+  <div class="contato"> <a name="contato"></a>
+      <h3>Contato</h3>
+      <p>Email: protectivewings01@gmail.com</p>
+      <p>Telefone: (11) 97694-5199</p>
+  </div>
+  <div class="direitos">
+      <p>Todos os direitos reservados &copy; 2023 - Thiago Campana Biazon</p>
+  </div>
+</footer>
+</html>
+<script>
+   var palavras = ["ABACAXI", "BANANA", "CENOURA", "DAMASCO", "ESPINAFRE"];
+   
+var palavraSelecionada = "";
+var palavraExibida = [];
+var tentativasIncorretas = 0;
+var maxTentativas = 7;
+// var dicas = ["Animal doméstico", "Melhor amigo do homem", "Maior mamífero terrestre"];
+
+// function obterDica(palavra) {
+//   var indice = palavras.indexOf(palavra);
+//   if (indice !== -1) {
+//     return dicas[indice];
+//   }
+//   return "Dica não encontrada";
+// }
+
+
+// var palavraSelecionada = "cachorro";
+// var dica = obterDica(palavraSelecionada);
+// console.log("Palavra:", palavraSelecionada);
+// console.log("Dica:", dica);
+
+// Seleciona uma palavra aleatória
+function selecionarPalavra() {
+var indiceAleatorio = Math.floor(Math.random() * palavras.length);
+palavraSelecionada = palavras[indiceAleatorio];
+
+palavraExibida = [];
+for (var i = 0; i < palavraSelecionada.length; i++) {
+palavraExibida.push("_");
+}
+}
+
+// Atualiza a palavra exibida na tela
+function atualizarPalavraExibida() {
+var containerPalavra = document.getElementById("palavra");
+containerPalavra.innerText = palavraExibida.join(" ");
+}
+
+// Atualiza a imagem do boneco enforcado
+function atualizarImagemEnforcado() {
+var imgEnforcado = document.getElementById("img-enforcado");
+imgEnforcado.src = "enforcado" + tentativasIncorretas + ".png";
+}
+
+// Verifica se a letra selecionada faz parte da palavra
+function verificarLetra(letra) {
+var encontrada = false;
+
+for (var i = 0; i < palavraSelecionada.length; i++) {
+if (palavraSelecionada[i] === letra) {
+palavraExibida[i] = letra;
+encontrada = true;
+}
+}
+
+if (!encontrada) {
+tentativasIncorretas++;
+atualizarImagemEnforcado();
+}
+}
+
+// Verifica se o jogo terminou (vitória ou derrota)
+function verificarStatusJogo() {
+if (palavraExibida.indexOf("_") === -1) {
+alert("Parabéns! Você venceu!");
+reiniciarJogo();
+} else if (tentativasIncorretas === maxTentativas) {
+alert("Você perdeu! A palavra era: " + palavraSelecionada);
+reiniciarJogo();
+}
+}
+
+// Reinicia o jogo
+function reiniciarJogo() {
+selecionarPalavra();
+atualizarPalavraExibida();
+tentativasIncorretas = 0;
+atualizarImagemEnforcado();
+}
+
+// Adiciona evento de clique para as letras do teclado
+var letras = document.getElementsByClassName("letra");
+for (var i = 0; i < letras.length; i++) {
+letras[i].addEventListener("click", function(event) {
+var letra = event.target.innerText;
+event.target.disabled = true;
+verificarLetra(letra);
+atualizarPalavraExibida();
+verificarStatusJogo();
+});
+}
+
+// Inicializa o jogo
+selecionarPalavra();
+atualizarPalavraExibida();
+atualizarImagemEnforcado();
+</script>
