@@ -13,7 +13,7 @@ nav {
 
 nav ul {
   margin: 0;
-  padding: 0;
+  padding: 0; 
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -92,12 +92,13 @@ h1 {
   
   #container-enforcado {
     text-align: center;
-    margin: 30px 0;
+    margin-top: -25vh;
   }
   
   #container-palavra {
     text-align: center;
     font-size: 10vh;
+    color: #ccc;
   }
   
   #teclado {
@@ -105,9 +106,12 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 20px;
-    
   }
   
+  button:hover {
+    background: linear-gradient(to bottom, #275d86, #580a0a);
+    color: rgb(8, 233, 222) ;
+  }
   .letra {
     width: 40px;
     height: 40px;
@@ -115,13 +119,28 @@ h1 {
     font-size: 18px;
     border: none;
     border-radius: 5px;
-    background-color: #ccc;
+    background-color: rgb(8, 233, 222);
     cursor: pointer;
   }
   
   #imagem-da-forca {
     width: 200px;
     height: 200px;
+  }
+
+  #div_dica {
+    color: aliceblue;
+    font-size: 3.7vh;
+    text-align: center;
+    margin-left: 170vh;
+    margin-top: 10vh;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #094a94;
+    border-radius: 30px;
+    padding: 16px;
+    text-transform: none;
+    height: auto;
+    width: 210px;
   }
 
   footer {

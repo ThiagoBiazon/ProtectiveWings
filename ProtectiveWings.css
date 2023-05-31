@@ -61,7 +61,7 @@
 }
 
 nav {
-    background-color: #161515;
+    background: linear-gradient(to bottom, #353738, #000000);
     /* Cor de fundo da navbar */
     height: 10vh;
     /* Altura da navbar */
