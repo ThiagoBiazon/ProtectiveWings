@@ -345,9 +345,9 @@ button:hover {
     color: #1a33a3;
 }
 
-.aeronaves img {
-    margin-top: -10vh;
-    ;
+.aeronaves #caças img {
+    height: 49vh;
+    width: 49vh;
 }
 
 .aeronaves h3 {

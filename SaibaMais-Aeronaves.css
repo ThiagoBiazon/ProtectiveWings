@@ -91,14 +91,17 @@ nav ul li a:hover {
     margin-left: 3vh;
 }
 
-.caça img {
-    margin-top: -8vh;
-    width: 1320px;
+.caça #caças img {
+    height: 50vh;
+    width: 50vh;
+    margin-top: -4vh;
 }
+
 .container_caixa {
     display: flex;
     justify-content: space-around;
 }
+
 .caixa {
 width: 40vh;
 height: 40vh;
@@ -111,5 +114,290 @@ border-radius: 30px;
     font-size: 2.5vh;
     font-family: 'Josefin Sans', sans-serif;
     margin-left: 2vh;
-    
+}
+
+.rotativas h2 {
+    font-size: 6vh;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ffffff;
+    margin-left: 3vh;
+}
+
+.rotativas #asas_rotativas img {
+    height: 49vh;
+    width: 49vh;
+}
+
+.container_caixa2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.caixa2 {
+    width: 40vh;
+    height: 40vh;
+    background-color: #094a94;
+    text-align: start;
+    border-radius: 30px;
+}
+
+.caixa2 h3 {
+    font-size: 2.5vh;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: 2vh;
+}
+
+.reconhecimento h2 {
+    font-size: 6vh;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ffffff;
+    margin-left: 3vh;
+}
+
+.reconhecimento #avioes_reconhecimento img {
+    height: 50vh;
+    width: 50vh;
+    margin-top: -9vh;
+}
+
+.container_caixa3 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.caixa3 {
+    width: 40vh;
+    height: 40vh;
+    background-color: #094a94;
+    text-align: start;
+    border-radius: 30px;
+}
+
+.caixa3 h3 {
+    font-size: 2.5vh;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: 2vh;
+}
+
+.transporte h2 {
+    font-size: 6vh;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ffffff;
+    margin-left: 3vh;
+}
+
+.transporte #avioes_transporte img {
+    height: 50vh;
+    width: 50vh;
+    margin-top: -10vh;
+}
+
+.container_caixa4 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.caixa4 {
+    width: 40vh;
+    height: 40vh;
+    background-color: #094a94;
+    text-align: start;
+    border-radius: 30px;
+}
+
+.caixa4 h3 {
+    font-size: 2.5vh;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: 2vh;
+}
+
+.patrulha h2 {
+    font-size: 6vh;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ffffff;
+    margin-left: 40vh;
+}
+
+.patrulha #avioes_patrulha img {
+    height: 50vh;
+    width: 50vh;
+    margin-top: -3vh;
+}
+
+.container_caixa5 {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 103vh;
+}
+
+.caixa5 {
+    width: 40vh;
+    height: 40vh;
+    background-color: #094a94;
+    text-align: start;
+    border-radius: 30px;
+}
+
+.caixa5 h3 {
+    font-size: 2.5vh;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: 2vh;
+}
+
+.rotativas #risco img {
+    margin-left: 50vh;
+    margin-top: -110vh;
+    height: 110vh;
+}
+
+.especial h2 {
+    font-size: 6vh;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ffffff;
+    margin-left: 125vh;
+    margin-top: -99vh;
+}
+
+.especial #avioes_especial img {
+    height: 43vh;
+    width: 43vh;
+    margin-top: -3vh;
+    margin-left: 160vh;
+}
+
+.especial #avioes_especial2 img {
+    height: 48vh;
+    width: 48vh;
+    margin-top: -39vh;
+    margin-left: 105vh;
+}
+
+.container_caixa6 .caixa6 {
+    display: flex;
+    justify-content: space-around;
+    width: 40vh;
+    height: 40vh;
+    background-color: #094a94;
+    text-align: start;
+    border-radius: 30px;
+    margin-left: 108vh;
+    margin-top: -2vh;
+}
+
+.container_caixa7 .caixa7 {
+    display: flex;
+    justify-content: space-around;
+    width: 40vh;
+    height: 40vh;
+    background-color: #094a94;
+    text-align: start;
+    border-radius: 30px;
+    margin-left: 160vh;
+    margin-top: -40vh;
+
+}
+
+.caixa6 h3 {
+    font-size: 2.5vh;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.caixa7 h3 {
+    font-size: 2.5vh;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.instrucao h2 {
+    font-size: 6vh;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ffffff;
+    margin-left: 40vh;
+}
+
+.instrucao #avioes_instrucao img {
+    height: 50vh;
+    width: 50vh;
+    margin-top: -3vh;
+}
+
+.container_caixa8 {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 103vh;
+}
+
+.caixa8 {
+    width: 40vh;
+    height: 40vh;
+    background-color: #094a94;
+    text-align: start;
+    border-radius: 30px;
+    margin-top: -8vh;
+}
+
+.caixa8 h3 {
+    font-size: 2.5vh;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: 2vh;
+}
+
+.rotativas #risco img {
+    margin-left: 50vh;
+    margin-top: -110vh;
+    height: 110vh;
+}
+
+.inspecao h2 {
+    font-size: 6vh;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ffffff;
+    margin-left: 125vh;
+    margin-top: -99vh;
+}
+
+.inspecao #avioes_inspecao img {
+    margin-top: -1vh;
+    margin-left: 143vh;
+    height: 45vh;
+}
+
+.inspecao #avioes_inspecao2 img {
+    margin-top: -43vh;
+    margin-left: 99vh;
+    height: 45vh;
+}
+
+.container_caixa9 .caixa9 {
+    display: flex;
+    justify-content: space-around;
+    width: 40vh;
+    height: 40vh;
+    background-color: #094a94;
+    text-align: start;
+    border-radius: 30px;
+    margin-left: 108vh;
+    margin-top: -2vh;
+}
+
+.container_caixa10 .caixa10 {
+    display: flex;
+    justify-content: space-around;
+    width: 40vh;
+    height: 40vh;
+    background-color: #094a94;
+    text-align: start;
+    border-radius: 30px;
+    margin-left: 160vh;
+    margin-top: -40vh;
+
+}
+
+.caixa9 h3 {
+    font-size: 2.5vh;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.caixa10 h3 {
+    font-size: 2.5vh;
+    font-family: 'Josefin Sans', sans-serif;
 }
