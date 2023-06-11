@@ -21,7 +21,7 @@ body {
     font-size: 8vh;
     font-family: 'Josefin Sans', sans-serif;
     color: rgb(34, 99, 143);
-    margin-top: 15vh;
+    margin-top: 5vh;
     text-align: start;
     margin-left: 20vh;
 }
@@ -58,7 +58,6 @@ body {
     border-radius: 15px;
     border: 3px solid rgb(34, 99, 143);
     padding: 8px;
-    
     font-size: 12px;
     margin-top: -1vh;
     text-align: start;
@@ -80,7 +79,7 @@ button {
     padding: 7px 91px; /* Espaçamento interno */
     font-size: 17px; /* Tamanho da fonte */
     margin-left: -85vh;
-    margin-top: 77vh;
+    margin-top: 75vh;
     cursor: pointer; /* Cursor do mouse */
     border-radius: 10px; /* Borda arredondada */
     box-shadow: 0 8px 16px rgba(223, 224, 226, 0.2); /* Sombra */
@@ -109,8 +108,13 @@ transition: all 1s ease-in-out;
 
 }
 
-.seta {
-    margin-left: 2vh;
-    position: absolute;
-}
-
+.voltar-link {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background-image: url("./img/SETA\ \(1\).png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -9999px; /* esconde o texto do link */
+  }

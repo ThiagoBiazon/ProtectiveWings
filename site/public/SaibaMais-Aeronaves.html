@@ -9,27 +9,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="SaibaMais-Aeronaves.css">
+    <link rel="shorte icon" href="./img/Icon aeronaves.jpg" type="image/x-icon">
     <title>Saiba Mais - Aeronaves</title>
 </head>
 <nav>
-    <div class="seta">
-        <a href="./ProtectiveWings.html#graduacoes"><img src="./img/SETA (1).png" width="70px"></a>
-    </div>
     <ul>
         <li><a href="##"></a></li>
-        <li><a href="./ProtectiveWings.html">INÍCIO</a></li>
-        <li><a href="ProtectiveWings.html#noticias">ÚLTIMAS NOTÍCIAS</a></li>
-        <li><a href="ProtectiveWings.html#graduacoes">POSTOS E GRADUAÇÕES </a></li>
-        <li><a href="../ProtectiveWings/Enigma das palavras/jogo.html">ENIGMA DAS LETRAS</a></li>
-        <li><a href="SaibaMais-Graduações.html#contato">CONTATO</a></li>
+        <li><a href="./index.html">INÍCIO</a></li>
+        <li><a href="index.html#noticias">ÚLTIMAS NOTÍCIAS</a></li>
+        <li><a href="index.html#graduacoes">POSTOS E GRADUAÇÕES </a></li>
+        <li><a href="./Enigmadaspalavras/jogo.html">ENIGMA DAS LETRAS</a></li>
+        <li><a href="SaibaMais-Aeronaves.html#contato">CONTATO</a></li>
         <div class="profile-button">
             <img src="./img/3106807-removebg-preview.png" alt="Ícone de Perfil">
             <div class="profile-menu">
-                <a href="#">Perfil</a>
                 <a href="#">Deslogar</a>
             </div>
         </div>
     </ul>
+    <a class="voltar-link" href="#" onclick="voltarPagina()"></a>
 </nav>
 
 <body>
@@ -464,11 +462,11 @@
                 <h2>Inspeção em Voo</h2>
 
                 <div id="avioes_inspecao">
-                    <img src="./img/IU-93A.png" >
+                    <img src="./img/IU-93A.png">
                 </div>
-                
+
                 <div id="avioes_inspecao2">
-                    <img src="./img/IU-50.png" >
+                    <img src="./img/IU-50.png">
                 </div>
 
                 <div class="container_caixa9">
@@ -518,5 +516,37 @@
     </div>
 
 </body>
+<footer>
+    <div class="texto">
+        <h4>Asas que protegem <br>
+            o país
+        </h4>
+        <img src="./img/4d1fef18c89667d90a822c59f96ae8dd-removebg-preview.png" width="150">
+    </div>
+    <div class="links">
+        <h3>Links Úteis</h3>
+        <ul>
+            <li><a href="./index.html">Início</a></li>
+            <li><a href="./login.html">Login</a></li>
+            <li><a href="./cadastro.html">Cadastre-se</a></li>
+            <li><a href="./Enigmadaspalavras/jogo.html">Enigma das letras</a></li>
+        </ul>
+    </div>
+    <div class="contato"> <a name="contato"></a>
+        <h3>Contato</h3>
+        <p>Email: protectivewings01@gmail.com</p>
+        <p>Telefone: (11) 97694-5199</p>
+    </div>
+    <div class="direitos">
+        <p>Todos os direitos reservados &copy; 2023 - Thiago Campana Biazon</p>
+    </div>
+</footer>
 
 </html>
+<script>
+    function voltarPagina() {
+        history.go(-1);
+    }
+    // a função voltarPagina() é chamada, que executa o método go(-1)
+    //  do objeto history, voltando para a página anterior no histórico de navegação.
+</script>

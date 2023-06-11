@@ -5,7 +5,6 @@
    <style>
       body {
          background: linear-gradient(to bottom, #1b35a5, #438fb3);
-
          margin: 0;
          padding: 0;
       }
@@ -30,7 +29,7 @@
       <li><a href="#noticias" >ÚLTIMAS NOTÍCIAS</a></li>
       <li><a href="#graduacoes" >POSTOS E GRADUAÇÕES </a></li>
       <li><a href="#aeronaves">AERONAVES E HELICÓPTEROS </a></li>
-      <li><a href="./Enigma das palavras/jogo.html">ENIGMA DAS LETRAS</a></li>
+      <li><a onclick="EntrarEnigma()">ENIGMA DAS LETRAS</a></li>
       <li><a href="#contato">CONTATO</a></li>
       <li><a href="./login.html">LOGIN </a></li>
    </ul>
@@ -193,10 +192,10 @@
    <div class="links">
       <h3>Links Úteis</h3>
       <ul>
-         <li><a href="./ProtectiveWings.html">Início</a></li>
+         <li><a href="./index.html">Início</a></li>
          <li><a href="./login.html">Login</a></li>
          <li><a href="./cadastro.html">Cadastre-se</a></li>
-         <li><a href="./Enigma das palavras/jogo.html">Enigma das letras</a></li>
+         <li><a onclick="EntrarEnigma()">Enigma das letras</a></li>
       </ul>
    </div>
    <div class="contato"> <a name="contato"></a>
@@ -210,16 +209,42 @@
 </footer>
 
 </html>
+
+<!-- Script do alerta -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 <script>
+   var Usuário = sessionStorage.getItem("idUsuário")
+
    function SaibaMais() {
-     window.location.href = "Notícias-SaibaMais.html";
+      if(Usuário >= 1){ 
+         window.location.href = "Notícias-SaibaMais.html";
+     } else {
+      swal(`Ops`, `Para ter acesso aos conteúdos é necessário realizar o login`, "error");
+     }
    }
 
    function Saibamais() {
-     window.location.href = "SaibaMais-Graduações.html";
+      if(Usuário >= 1){ 
+         window.location.href = "SaibaMais-Graduações.html";
+     } else {
+      swal(`Ops`, `Para ter acesso aos conteúdos é necessário realizar o login`, "error");
+     }
    }
 
    function saibamais2() {
-     window.location.href = "SaibaMais-Aeronaves.html";
+     if(Usuário >= 1){ 
+      window.location.href = "SaibaMais-Aeronaves.html";
+     } else {
+      swal(`Ops`, `Para ter acesso aos conteúdos é necessário realizar o login`, "error");
+     }
+   }
+
+   function EntrarEnigma() {
+     if(Usuário >= 1){ 
+      window.location.href = "./Enigmadaspalavras/jogo.html";
+     } else {
+      swal(`Ops`, `Para ter acesso ao jogo é necessário realizar o login`, "error");
+     }
    }
  </script>

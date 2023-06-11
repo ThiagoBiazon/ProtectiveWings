@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="shortcut icon" href="./img/icon login.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <div class="parte1">
+        <!-- Seta para voltar para página inicial -->
+        <a class="voltar-link" href="#" onclick="voltarPagina()"></a>
+        <h1>
+            Login
+        </h1>
+        <p> Seja bem-vindo(a), faça o login para ter <br>
+            acesso aos conteúdos.</p>
+        <h2>
+            E-mail
+        </h2>
+        <input id="inp_email" placeholder="Insira o seu e-mail">
+        <h3>
+            Senha
+        </h3>
+        <input type="password" id="inp_senha" placeholder="Insira a sua senha">
+        <h4>Não possui uma conta? <a href="./cadastro.html">Cadastre-se</a></h4>
+    </div>
+    <div class="parte2">
+        <button onclick="entrar()">
+            Entrar
+        </button>
+        <img src="./img/IMAGEM LOGIN.png">
+    </div>
+</body>
+
+</html>
+
+<!-- Script do alerta -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<script>
+    function voltarPagina() {
+        history.go(-1);
+    }
+    // a função voltarPagina() é chamada, que executa o método go(-1)
+    //  do objeto history, voltando para a página anterior no histórico de navegação.
+
+    function entrar() {
+
+        var email = inp_email.value;
+        var senha = inp_senha.value;
+
+        if (email =="" || senha ==""){
+            swal(`Por favor`, `Preencha todos os campos!`, "error");
+        } else {
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                emailServer: email,
+                senhaServer: senha,
+            })
+        }).then(res => {
+            console.log(res)
+            if (res.ok) {
+                swal(`Bem-vindo(a)`, `Login realizado com sucesso!`, "success");
+                return res.json()
+            }
+        }).then(resposta => {
+            setTimeout(() => {
+                RealizarLogin(resposta)
+            }, 2000);
+        })
+    }
+}
+
+    function RealizarLogin(resposta) {
+
+        sessionStorage.setItem("idUsuário", resposta.idUsuário)
+
+        sessionStorage.setItem("Nome", resposta.nome)
+
+        sessionStorage.setItem("E-mail", resposta.email)
+
+        window.location.href = "/index.html";
+    }
+</script>

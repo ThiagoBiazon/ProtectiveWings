@@ -30,6 +30,7 @@ nav ul li {
 nav ul li a {
     color: #ffffff;
     text-decoration: none;
+    cursor: pointer;
 }
 
 nav ul li a:hover {
@@ -236,6 +237,7 @@ footer {
     font-size: 2.7vh;
     margin-left: 47vh;
     margin-top: -2vh;
+    cursor: pointer;
     
 }
 
@@ -303,9 +305,13 @@ html {
     display: block;  /* para aparecer na tela quando passar por cima*/
 }
 
-.seta {
-    margin-left: 2vh;
-    margin-top: 8vh;
-    position: absolute;
-}
-  
+.voltar-link {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background-image: url("./img/SETA\ \(1\).png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -9999px; /* esconde o texto do link */
+  }

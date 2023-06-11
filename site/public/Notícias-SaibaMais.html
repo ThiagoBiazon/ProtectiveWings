@@ -11,26 +11,21 @@
 </head>
 
 <nav>
-    <div class="seta">
-        <a href="./ProtectiveWings.html#noticias"><img
-                src="./img/SETA (1).png"
-                width="70px"></a>
-    </div>
     <ul>
         <li><a href="##"></a></li>
-        <li><a href="./ProtectiveWings.html">INÍCIO</a></li>
-        <li><a href="ProtectiveWings.html#graduacoes">POSTOS E GRADUAÇÕES </a></li>
-        <li><a href="ProtectiveWings.html#aeronaves">AERONAVES E HELICÓPTEROS </a></li>
-        <li><a href="./Enigma das palavras/jogo.html">ENIGMA DAS LETRAS </a></li>
+        <li><a href="./index.html">INÍCIO</a></li>
+        <li><a href="index.html#graduacoes">POSTOS E GRADUAÇÕES </a></li>
+        <li><a href="index.html#aeronaves">AERONAVES E HELICÓPTEROS </a></li>
+        <li><a href="./Enigmadaspalavras/jogo.html">ENIGMA DAS LETRAS </a></li>
         <li><a href="Notícias-SaibaMais.html#contato">CONTATO</a></li>
         <div class="profile-button">
             <img src="./img/3106807-removebg-preview.png" alt="Ícone de Perfil">
             <div class="profile-menu">
-                <a href="#">Perfil</a>
                 <a href="#">Deslogar</a>
             </div>
         </div>
     </ul>
+    <a class="voltar-link" href="#" onclick="voltarPagina()"></a>
 </nav>
 
 <body>
@@ -242,10 +237,12 @@
     <div class="links">
         <h3>Links Úteis</h3>
         <ul>
-            <li><a href="./ProtectiveWings.html">Início</a></li>
+            <li><a href="./index.html">Início</a></li>
             <li><a href="./login.html">Login</a></li>
             <li><a href="./cadastro.html">Cadastre-se</a></li>
-            <span><li><a href="./Enigma das palavras/jogo.html">Enigma das Letras</a></li></span>
+            <span>
+                <li><a href="./Enigmadaspalavras/jogo.html">Enigma das Letras</a></li>
+            </span>
         </ul>
     </div>
     <div class="contato"> <a name="contato"></a>
@@ -257,4 +254,12 @@
         <p>Todos os direitos reservados &copy; 2023 - Thiago Campana Biazon</p>
     </div>
 </footer>
+
 </html>
+<script>
+    function voltarPagina() {
+        history.go(-1);
+    }
+    // a função voltarPagina() é chamada, que executa o método go(-1)
+    //  do objeto history, voltando para a página anterior no histórico de navegação.
+</script>

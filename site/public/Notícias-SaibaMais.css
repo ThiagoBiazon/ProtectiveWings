@@ -88,11 +88,16 @@ html {
     /* para aparecer na tela quando passar por cima*/
 }
 
-.seta {
-    margin-left: 2vh;
-    margin-top: 8vh;
-    position: absolute;
-}
+.voltar-link {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background-image: url("./img/SETA\ \(1\).png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -9999px; /* esconde o texto do link */
+  }
 
 .titulo p {
     color: rgb(8, 233, 222);

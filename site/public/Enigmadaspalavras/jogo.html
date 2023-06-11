@@ -9,34 +9,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="shorte icon" href="../img/icon jogo.jpg" type="image/x-icon">
     <title>Document</title>
 </head>
 <nav>
-    <div class="seta">
-        <a href="../ProtectiveWings.html"><img src="../img/SETA (1).png" width="70px"></a>
-    </div>
     <ul>
         <li><a href="##"></a></li>
-        <li><a href="../ProtectiveWings.html">INÍCIO</a></li>
-        <li><a href="../Notícias-SaibaMais.html">ÚLTIMAS NOTÍCIAS </a></li>
-        <li><a href="../ProtectiveWings.html#graduacoes">POSTOS E GRADUAÇÕES </a></li>
-        <li><a href="../ProtectiveWings.html#aeronaves">AERONAVES E HELICÓPTEROS </a></li>
-        <li><a href="../Enigma das palavras/jogo.html#contato">CONTATO</a></li>
+        <li><a href="../index.html">INÍCIO</a></li>
+        <li><a href="../index.html#noticias">ÚLTIMAS NOTÍCIAS </a></li>
+        <li><a href="../index.html#graduacoes">POSTOS E GRADUAÇÕES </a></li>
+        <li><a href="../index.html#aeronaves">AERONAVES E HELICÓPTEROS </a></li>
+        <li><a href="../Enigmadaspalavras/jogo.html#contato">CONTATO</a></li>
         <div class="profile-button">
             <img src="../img/3106807-removebg-preview.png" alt="Ícone de Perfil">
             <div class="profile-menu">
-                <a href="#">Perfil</a>
                 <a href="#">Deslogar</a>
             </div>
         </div>
     </ul>
+    <!-- Seta para voltar para página inicial -->
+    <a class="voltar-link" href="#" onclick="voltarPagina()"></a>
 </nav>
 
-<body>
+<body onload="plotarDados()">
     <h1>ENIGMA DAS LETRAS</h1>
-
+    
     <div id="div_dica"></div>
-
+    <button class="ranking-button">Ranking</button>
     <div id="container-enforcado">
         <img id="img-enforcado" src="enforcado0.png" alt="Enforcado">
     </div>
@@ -85,8 +85,18 @@
         <button class="letra">7</button>
         <button class="letra">8</button>
         <button class="letra">9</button>
+    </div>
+
+    <div class="gráfico">
+        <p>Ranking <img src="../img/DASHBOARD-removebg-preview.png"></p>
 
     </div>
+
+    <div class="Dashboard">
+        <canvas id="myChart"></canvas>
+    </div>
+
+
 </body>
 <footer>
     <div class="texto">
@@ -98,11 +108,11 @@
     <div class="links">
         <h3>Links Úteis</h3>
         <ul>
-            <li><a href="../ProtectiveWings.html">Início</a></li>
+            <li><a href="../index.html">Início</a></li>
             <li><a href="../login.html">Login</a></li>
             <li><a href="../cadastro.html">Cadastre-se</a></li>
             <span>
-                <li><a href="../Enigma das palavras/jogo.html">Enigma das Letras</a></li>
+                <li><a href="../Enigmadaspalavras/jogo.html">Enigma das Letras</a></li>
             </span>
         </ul>
     </div>
@@ -117,9 +127,23 @@
 </footer>
 
 </html>
+
+<!-- Script do alerta -->
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 <script>
-    var palavras = [{ "palavra": "F-5M-TIGER", "dica": "Dica: Caça mais rápido da FAB." }, { "palavra": "CAPITÃO", "dica": "Dica: É o oficial intermediário." }, { "palavra": "CABO", "dica": "Dica: É responsável em garantir que as ordens vindas dos sargentos sejam cumpridas pelos soldados." }, { "palavra": "SANTOS-DUMONT", "dica": "Dica: É o pai da aviação." }, { "palavra": "FORÇA-AEREA-BRASILEIRA", "dica": "Dica: Significado da sigla FAB." }, { "palavra": "SAAB", "dica": "Dica: Sigla da empresa sueca, em parceria com a Embraer que produziram o Caça F-39." }, { "palavra": "F-39-GRIPEN", "dica": "Dica: Caça que alcança o maior teto de serviço entre eles." }, { "palavra": "MARECHAL-DO-AR", "dica": "Dica: Maior patente da FAB em tempos de guerra." }];
+    // Alterar a cor dos indicadores da dashboard
+    Chart.defaults.color = "rgb(233, 250, 0)"
+
+    var idUsuário = sessionStorage.getItem("idUsuário")
+
+    function voltarPagina() {
+        history.go(-1);
+        // a função voltarPagina() é chamada, que executa o método go(-1)
+        //  do objeto history, voltando para a página anterior no histórico de navegação.
+    }
+
+    var palavras = [{ "palavra": "F-5M-TIGER", "dica": "Dica: Caça mais rápido da FAB." },{ "palavra": "CAPITÃO", "dica": "Dica: É o oficial intermediário." }, { "palavra": "CABO", "dica": "Dica: É responsável em garantir que as ordens vindas dos sargentos sejam cumpridas pelos soldados." }, { "palavra": "SANTOS-DUMONT", "dica": "Dica: É o pai da aviação." }, { "palavra": "FORÇA-AEREA-BRASILEIRA", "dica": "Dica: Significado da sigla FAB." }, { "palavra": "SAAB", "dica": "Dica: Sigla da empresa sueca, em parceria com a Embraer que produziram o Caça F-39." }, { "palavra": "F-39-GRIPEN", "dica": "Dica: Caça que alcança o maior teto de serviço entre eles." }, { "palavra": "MARECHAL-DO-AR", "dica": "Dica: Maior patente da FAB em tempos de guerra." }];
 
     var palavraSelecionada = "";
     var palavraExibida = [];
@@ -127,8 +151,10 @@
     var maxTentativas = 6;
 
     function selecionarPalavra() {
+
         var indiceAleatorio = Math.floor(Math.random() * palavras.length);
         palavraSelecionada = palavras[indiceAleatorio].palavra;
+
         
         palavraExibida = [];
         for (var i = 0; i < palavraSelecionada.length; i++) {
@@ -136,11 +162,12 @@
         }
         div_dica.innerHTML = `${palavras[indiceAleatorio].dica}`
     }
-
+    
     // Atualiza a palavra exibida na tela
     function atualizarPalavraExibida() {
         var containerPalavra = document.getElementById("palavra");
         containerPalavra.innerText = palavraExibida.join(" ");
+        // palavras.splice(indiceAleatorio, 1)
     }
 
     // Atualiza a imagem do boneco enforcado
@@ -167,19 +194,34 @@
     }
 
     // Verifica se o jogo terminou (vitória ou derrota)
+    var pontuação = 0
     function verificarStatusJogo() {
+
+
         if (palavraExibida.indexOf("_") == -1) {
             setTimeout(() => {
                 swal("Parabéns!", `Você acertou! A palavra era: ${palavraSelecionada}`, "success");
+                pontuação++
                 reiniciarJogo();
             }, 500);
         } else if (tentativasIncorretas == maxTentativas) {
+
+            fetch("/jogo/EnviarTentativa", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    idUsuárioServer: idUsuário,
+                    pontuaçãoServer: pontuação
+                })
+            })
             setTimeout(() => {
-            swal("Que pena!", `Você errou! Continue tentando, a palavra era: ${palavraSelecionada}`, "error");
-            tentativasIncorretas = 0;
-            atualizarImagemEnforcado();
-            reiniciarJogo();
-        }, 500);
+                swal("Que pena!", `Você errou! Continue tentando, a palavra era: ${palavraSelecionada}`, "error");
+                tentativasIncorretas = 0;
+                atualizarImagemEnforcado();
+                TerminarJogo();
+            }, 500);
         }
     }
 
@@ -187,6 +229,13 @@
     function reiniciarJogo() {
         selecionarPalavra();
         atualizarPalavraExibida();
+    }
+
+    function TerminarJogo() {
+        pontuação = 0
+        selecionarPalavra();
+        atualizarPalavraExibida();
+        plotarDados();
     }
 
     // Adiciona evento de clique para as letras do teclado
@@ -204,4 +253,50 @@
     selecionarPalavra();
     atualizarPalavraExibida();
     atualizarImagemEnforcado();
+
+    // DASHBORARD
+
+    async function reqDados() {
+
+        lista = await fetch("/Jogo/buscarDados", {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json"
+            }
+        }).then(res => res.json())
+        return lista
+    }
+
+    const labels = [];
+
+    const data = {
+        labels: labels,
+        datasets: [{
+            label: 'Quantidade de palavras acertadas',
+            backgroundColor: 'rgb(64, 123, 212)',
+            data: [],
+        }]
+    };
+
+    const config = {
+        type: 'bar',
+        data: data,
+        options: {}
+    };
+    
+    const myChart = new Chart(
+        document.getElementById('myChart'),
+        config
+    );
+    async function plotarDados() {
+        var dados = await reqDados()
+        myChart.data.datasets[0].data = []
+        console.log(myChart.data.datasets[0])
+        for (var i = 0; i < dados.length; i++) {
+            labels.push(`${dados[i].nome} ${dados[i].sobrenome}`)
+            myChart.data.datasets[0].data.push(dados[i].palavrasAcertadas)
+        }
+        myChart.update()
+    }
+
 </script>

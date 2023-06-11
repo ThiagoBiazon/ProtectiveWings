@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="shortcut icon" href="./img/icon cadastro.jfif" type="image/x-icon">
+</head>
+
+<body>
+    <div class="parte1">
+        <h1>
+            Cadastro
+        </h1>
+        <p> Seja bem-vindo(a), crie sua conta e <br>
+            tenha acesso aos conteúdos.</p>
+        <h2>
+            Nome *
+        </h2>
+        <input id="inp_nome" placeholder="Insira o seu primeiro nome">
+        <h3>
+            Sobrenome *
+        </h3>
+        <input id="inp_sobrenome" placeholder="Insira o seu sobrenome">
+        <h5>
+            E-mail *
+        </h5>
+        <input id="inp_email" placeholder="Insira o seu e-mail" type="email">
+        <h6>
+            Celular *
+        </h6>
+        <input id="inp_celular" placeholder="Insira o celular com DDD">
+        <h4>Já possui uma conta?<br>
+            <a href="./login.html">Entrar</a>
+        </h4>
+        <div class="ultimaParte">
+            <h2>
+                Senha *
+            </h2>
+            <input id="inp_senha" placeholder="Insira a sua senha">
+            <button onclick="ClicarCadastrar()">
+                FInalizar cadastro
+            </button>
+        </div>
+
+    </div>
+    <div class="parte2">
+        <!-- Seta para voltar para página inicial -->
+        <a class="voltar-link" href="#" onclick="voltarPagina()"></a>
+        <img src="./img/imagem cadastro.png">
+    </div>
+</body>
+
+</html>
+
+<!-- Script do alerta -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<script>
+    function voltarPagina() {
+        history.go(-1);
+    }
+    // a função voltarPagina() é chamada, que executa o método go(-1)
+    //  do objeto history, voltando para a página anterior no histórico de navegação.
+
+    function ClicarCadastrar() {
+
+        var nome = inp_nome.value;
+        var sobrenome = inp_sobrenome.value;
+        var email = inp_email.value;
+        var celular = inp_celular.value;
+        var senha = inp_senha.value;
+
+        if (nome == "" || sobrenome == "" || email == "" || celular == "" || senha == "") {
+            swal(`Ops`, `Por favor, preencha todos os campos!`, "error");
+        } else if (celular.length != 11) {
+            swal(`Ops`, `Digite um número válido de celular com DDD`, "error");
+        } else if (email.indexOf("@") == -1 || email.startsWith("@") == true) {
+            swal(`Ops`, `Digite um e-mail válido`, "error");
+        } else if (senha.length < 8) {
+            swal(`Ops`, `Digite uma senha com no mínimo 8 caracteres`, "error");
+        } else {
+            fetch("/usuarios/cadastrar", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    nomeServer: nome,
+                    sobrenomeServer: sobrenome,
+                    emailServer: email,
+                    celularServer: celular,
+                    senhaServer: senha,
+                })
+            }).then(res => {
+                if (res.ok) {
+                    swal(`Parabéns`, `Cadastro realizado com sucesso!`, "success");
+                    setTimeout(() => {
+                        window.location.href = "/login.html";
+                    }, 2000);
+
+                }
+            })
+        }
+
+    }
+</script>

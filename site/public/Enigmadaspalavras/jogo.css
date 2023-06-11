@@ -2,8 +2,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom, #275d86, #580a0a);
-
+  background: linear-gradient(to bottom, #275d86, #580a0a); 
 }
 
 nav {
@@ -35,12 +34,17 @@ nav ul li a:hover {
   color: rgb(251, 255, 0);
 }
 
-.seta {
-  margin-left: 2vh;
-  margin-top: 8vh;
+.voltar-link {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  background-image: url("../img/SETA\ \(1\).png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   position: absolute;
+  text-indent: -9999px; /* esconde o texto do link */
 }
-
 .profile-button {
   position: relative;
   /* para posição da segunda aba ficar em baixo do ícone*/
@@ -92,7 +96,7 @@ h1 {
   
   #container-enforcado {
     text-align: center;
-    margin-top: -25vh;
+    margin-top: -22vh;
   }
   
   #container-palavra {
@@ -130,12 +134,12 @@ h1 {
 
   #div_dica {
     color: aliceblue;
-    font-size: 3.7vh;
+    font-size: 25px;
     text-align: center;
     margin-left: 160vh;
     margin-top: 10vh;
     font-family: 'Josefin Sans', sans-serif;
-    background-color: #094a94;
+    background-color: rgb(64, 123, 212);
     border-radius: 30px;
     padding: 16px;
     text-transform: none;
@@ -169,7 +173,7 @@ h1 {
 .links h3 {
     font-size: 3vh;
     margin-top: 4vh;
-    margin-left: 56.5vh;
+    margin-lefnt: 56.5vh;
     white-space: nowrap;
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -208,6 +212,40 @@ h1 {
     font-family: 'Josefin Sans', sans-serif;
 }
 
+.Dashboard {
+  height: 70vh;
+  width: 110vh;
+  margin: auto;
+}
+
+.gráfico p {
+  text-align: center;
+  font-family: 'Caveat', cursive;
+  font-size: 12vh;
+  margin-right: 5vh;
+  color: rgb(233, 250, 0);
+}
+
+.gráfico img {
+  height: 12vh;
+}
+
 html {
   scroll-behavior: smooth; /*para descer devagar até a sessão apertada8*/
 }
+
+.ranking-button {
+  padding: 10px 20px;
+  background-color: rgb(64, 123, 212);
+  color: rgb(233, 250, 0);
+  border: none;
+  text-align: end;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 15px;
+  margin-left: 172vh;
+  margin-top: 5vh;
+}
+

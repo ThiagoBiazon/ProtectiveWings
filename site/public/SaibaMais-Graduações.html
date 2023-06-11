@@ -10,26 +10,21 @@
     <title>Saiba mais - Postos e graduações</title>
 </head>
 <nav>
-    <div class="seta">
-        <a href="./ProtectiveWings.html#graduacoes"><img
-                src="./img/SETA (1).png"
-                width="70px"></a>
-    </div>
     <ul>
         <li><a href="##"></a></li>
-        <li><a href="./ProtectiveWings.html">INÍCIO</a></li>
-        <li><a href="ProtectiveWings.html#noticias">ÚLTIMAS NOTÍCIAS</a></li>
-        <li><a href="ProtectiveWings.html#aeronaves">AERONAVES E HELICÓPTEROS </a></li>
-        <li><a href="./Enigma das palavras/jogo.html">ENIGMA DAS LETRAS </a></li>
+        <li><a href="./index.html">INÍCIO</a></li>
+        <li><a href="index.html#noticias">ÚLTIMAS NOTÍCIAS</a></li>
+        <li><a href="index.html#aeronaves">AERONAVES E HELICÓPTEROS </a></li>
+        <li><a onclick="EntrarEnigma()">ENIGMA DAS LETRAS</a></li>
         <li><a href="SaibaMais-Graduações.html#contato">CONTATO</a></li>
         <div class="profile-button">
             <img src="./img/3106807-removebg-preview.png" alt="Ícone de Perfil">
             <div class="profile-menu">
-                <a href="#">Perfil</a>
                 <a href="#">Deslogar</a>
             </div>
         </div>
     </ul>
+    <a class="voltar-link" href="#" onclick="voltarPagina()"></a>
 </nav>
 
 <body>
@@ -226,10 +221,10 @@
     <div class="links">
         <h3>Links Úteis</h3>
         <ul>
-            <li><a href="./ProtectiveWings.html">Início</a></li>
+            <li><a href="./index.html">Início</a></li>
             <li><a href="./login.html">Login</a></li>
             <li><a href="./cadastro.html">Cadastre-se</a></li>
-            <li><a href="./Enigma das palavras/jogo.html">Enigma das letras</a></li>
+            <li><a onclick="EntrarEnigma()">Enigma das letras</a></li>
         </ul>
     </div>
     <div class="contato"> <a name="contato"></a>
@@ -243,3 +238,20 @@
 </footer>
 
 </html>
+<script>
+    var Usuário = sessionStorage.getItem("idUsuário")
+
+    function voltarPagina() {
+        history.go(-1);
+    }
+    // a função voltarPagina() é chamada, que executa o método go(-1)
+    //  do objeto history, voltando para a página anterior no histórico de navegação.
+
+    function EntrarEnigma() {
+     if(Usuário >= 1){ 
+      window.location.href = "./Enigmadaspalavras/jogo.html";
+     } else {
+      swal(`Ops`, `Para ter acesso ao jogo é necessário realizar o login`, "error");
+     }
+   }
+</script>
